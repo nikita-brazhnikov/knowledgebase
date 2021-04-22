@@ -1,9 +1,11 @@
 # AWS development Knowledge share
 
-* :book: [Tutorials](manuals/index.md)  
-* :open_file_folder: [Templates](templates) 
-* :heavy_check_mark: [Hints](hints/index.md)  
-* :bulb: [Solutions]()
+* [Developer machine initial setup](./manuals/developer_initial_setup.md)
+* [Lambda development (JS), common recommendations](./manuals/lambda/common_recommendations.md)
+* [Lambda local machine development (JS)](./manuals/lambda/local_development.md)
+* [Lambda fast server update (JS)](./manuals/lambda/fast_update.md)
+* [Dynamodb. Essentials and solutions](./manuals/dynamodb/index.md)
+* [Lambda unit tests](./manuals/lambda/unit_tests.md)
 
 ---
 ## Featured pages

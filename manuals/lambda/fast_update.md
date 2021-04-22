@@ -1,6 +1,4 @@
-# Lambda development hints
-
-## How to upload Lambda to a dev environment faster
+# How to upload Lambda to a dev environment faster
 
 Update the Lambda's code directly, using AWS CLI. This will update only a deployment package and keep current environment variables and runtime settings untouched.
 
@@ -15,7 +13,7 @@ Make sure your Lambda satisfies the next requirements:
 
 ### For Python Lambda
 
-:black_square_button:  **TODO**
+  **TODO**
 
 ### How to use
 1. Adjust your Lambda folder

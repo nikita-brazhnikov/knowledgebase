@@ -19,7 +19,7 @@ const client = new AWS.DynamoDB.DocumentClient({
     region: getRegion(),
   });
 
-const result = client.query({
+const result = await client.query({
     TableName: TABLE_NAME,
     IndexName: 'updated_month-updated_at-index', // index to query 
     KeyConditionExpression: 'updated_month = :v_month and updated_at >= :v_after', // required

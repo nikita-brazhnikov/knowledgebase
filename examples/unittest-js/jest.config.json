@@ -1,0 +1,4 @@
+{
+  "testRegex": "test/.*\\.spec\\.js$",
+  "setupFilesAfterEnv": ["jest-extended"]
+}

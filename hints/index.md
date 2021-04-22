@@ -1,1 +1,0 @@
-* [Lambda development](./lambda.md)
