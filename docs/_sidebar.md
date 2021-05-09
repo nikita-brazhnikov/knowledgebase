@@ -1,0 +1,13 @@
+* [Developer machine initial setup](./manuals/developer_initial_setup.md)
+* Lambda development
+    * [Common recommendations](./manuals/lambda/common_recommendations.md)
+    * [Lambda local machine development (JS)](./manuals/lambda/local_development.md)
+    * [Lambda fast server update (JS)](./manuals/lambda/fast_update.md)
+    * [Lambda unit tests](./manuals/lambda/unit_tests.md)
+* [Dynamodb. Essentials and solutions](./manuals/dynamodb/index.md)
+  * [TLDR](./manuals/dynamodb/index.md)
+  * [Essentials](./manuals/dynamodb/essentials.md)
+  * [Dealing with bigdata](./manuals/dynamodb/solutions/bigdata.md)
+  * [Dummy data generation](./manuals/dynamodb/solutions/dummy.md)
+  * [lsc-dynamodb-patterns](./manuals/dynamodb/solutions/lsc-dynamodb-patterns.md)
+  * [Pagination](./manuals/dynamodb/solutions/pagination.md)

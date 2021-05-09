@@ -8,6 +8,7 @@ Update the Lambda's code directly, using AWS CLI. This will update only a deploy
 Make sure your Lambda satisfies the next requirements:
 * there is `build` script in `package.json` that runs `tsc` or other command, that transpiles TS in JS
 * the transpiled JS folder is `dist`
+
 ### For Javascript Lambda
 [Example script Gist](https://gist.github.com/nikita-brazhnikov/e9a53be9748750a65d927ced69df9810#file-update_lambda_code_ts-sh)
 

@@ -1,6 +1,6 @@
 # Approach 1 (only forward)
 
-```jsx
+```javascript
 /*
 Would return 
 { items: [ ... ], lastEvaluatedKey: { ... } }
@@ -19,7 +19,7 @@ const loadNext = async (lastEvaluatedKey, limit) => {
 
 Download all records metadata. For example, record's ID and `updatedAt` . Doing this will save you traffic.
 
-```jsx
+```javascript
 const items = [];
 let lastEvaluatedKey = undefined;
 do {
@@ -37,7 +37,7 @@ return items;
 
 Now you can sort and split in pages your metadata array. Then download and cache on the front-end only those items, you want to display right now.
 
-```jsx
+```javascript
 const keysToDownload = [ ...(partition keys)... ]
 return client.batchGet(keysToDownload.map(pk => ({pk}))
 ```

@@ -2,13 +2,13 @@ Uses AWS.DynamoDb.DocumentClient internally, so you should not use DynamoDb JSON
 
 # Install
 
-```jsx
+```shell
 npm i --save lsc-dynamodb-patterns
 ```
 
 # Usage
 
-```jsx
+```javascript
 // JS
 const { DDClient } = require('lsc-dynamodb-patterns')
 // TS
@@ -33,7 +33,7 @@ Calls  `DocumentClient.putItem` internally.
 
 `queryItems(query: Query) => any[]`
 
-```jsx
+```javascript
 const params = {
 	query: '#partitionKey = :pk and begins_with(sortKey, :sk)'
 	mapping: {

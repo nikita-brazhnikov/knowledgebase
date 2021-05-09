@@ -1,5 +1,9 @@
 # Essentials
 
+
+
+
+
 ## Table structure
 
 - Unstructured data, simular to JSON
@@ -59,3 +63,28 @@
 ### Conditional update
 
 put, update, batchWrite operations support `ConditionalExpression` that perform transactional check of conditions. If the item does not satisfy the condition, the DynamoDb will cancel the update operation and throw `ConditionException`
+
+## QUERY
+
+### Query against index
+```javascript
+const client = new AWS.DynamoDB.DocumentClient({
+    region: getRegion(),
+  });
+
+const result = await client.query({
+    TableName: TABLE_NAME,
+    IndexName: 'updated_month-updated_at-index', // index to query 
+    KeyConditionExpression: 'updated_month = :v_month and updated_at >= :v_after', // required
+    FilterExpression: 'is_active > :v_active AND reservation_incharge <> :v_incharge', // optional filter
+    ScanIndexForward: false,
+    ExpressionAttributeValues: { // values for placeholders in the KeyConditionExpression and the FilterExpression 
+      ':v_after': updatedAfter,
+      ':v_month': targetMonth,
+      ':v_active': -1,
+      ':v_incharge': '電子カルテ'
+    }
+});
+
+const items = result.Items; // table items list
+```

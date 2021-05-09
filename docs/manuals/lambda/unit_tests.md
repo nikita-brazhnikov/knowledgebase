@@ -1,6 +1,6 @@
 # Essentials
 
-📚 Demo project is located in `templates/unittest-js`
+📚 Demo project is located in [templates/unittest-js](https://github.com/nikita-brazhnikov/knowledgebase/tree/master/examples/unittest-js)
 
 - Jest core
     - [https://jestjs.io/docs/getting-started](https://jestjs.io/docs/getting-started)
