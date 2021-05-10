@@ -3,7 +3,7 @@
 
 ## Featured pages
 * [Developer's machine's initial setup](manuals/developer_initial_setup.md)
-* [Dynamodb. Essentials and solutions](./manuals/dynamodb/index.md)
+* [Dynamodb. Essentials and solutions](manuals/dynamodb/tldr.md)
 * [Lambda development (JS), common recommendations](./manuals/lambda/common_recommendations.md)
 ---
 ## How to edit
