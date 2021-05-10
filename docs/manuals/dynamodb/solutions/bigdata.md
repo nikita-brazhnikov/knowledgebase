@@ -3,7 +3,7 @@
 Query and Scan operations can retrieve a maximum of 1 MB of data, this limit applies before the filter expression is evaluated.
 In that case, the result from database contains not null  `LastEvaluatedKey` attribute. If there is `LastEvaluatedKey` in the result, there are more items to be retrieved, so you should loop
 
-```jsx
+```javascript
 const items = [];
 let lastEvaluatedKey = undefined;
 do {
@@ -26,7 +26,7 @@ Serial querying of the big amount of records is slow.
 
 If you need several independent queries to get necessary data, try to do them in parallel
 
-```jsx
+```javascript
 const customersRequest = dynamoDb.query( { ... } ).promise();
 const productsRequest = dynamoDb.query( {... } ).promise();
 const results = await Promise.all(customers,products);
@@ -39,7 +39,7 @@ const products = reqults[1].Items;
 
 If there is many short requests you want to perform in parallel, use promises pool
 
-```jsx
+```javascript
 const PromisePool = require('es6-promise-pool');
 
 const promisePoolSize = 10; // smaller for fast queries, larger for slow
@@ -71,7 +71,7 @@ await pool.start();
 
 You also can improve the performance by using the `batchGet` operation. There is a limit of 25 items per call, and you have to provide full primary keys of items (you can not query in batch). You can use the lodash's `partition` function to split your array in chunks.
 
-```jsx
+```javascript
 const _ = require('lodash')
 
 const batchTasks = _.partition(userIds, 25)

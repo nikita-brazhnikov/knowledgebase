@@ -11,3 +11,4 @@
   * [Dummy data generation](manuals/dynamodb/solutions/dummy.md)
   * [lsc-dynamodb-patterns](manuals/dynamodb/solutions/lsc-dynamodb-patterns.md)
   * [Pagination](manuals/dynamodb/solutions/pagination.md)
+  * [Counter](manuals/dynamodb/solutions/counter.md)

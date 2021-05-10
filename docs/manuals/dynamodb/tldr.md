@@ -46,7 +46,7 @@ Difficult (or nearly impossible) tasks for DynamoDb.
 - perform BI tasks (collect analytics, merge, group, count, flexible sort, filtering)
 - custom backups and restores
 
-⬆️ These tasks seems possible on a small amount of data, or is case when execution time does not matter, but keep in mind, that such operations are really ineffective and not scalable.
+!> These tasks seems possible on a small amount of data, or is case when execution time does not matter, but keep in mind, that such operations are really ineffective and not scalable.
 
 ## About costs
 
@@ -67,7 +67,7 @@ When you updates some attribute in 1 table item, all indexes, that contains this
 
 If you want to estimate your request's cost, add the `ReturnConsumedCapacity: 'TOTAL'` option in the DB request parameter's map. Then, pick the number of RRU from the response
 
-```jsx
+```javascript
 const costs = result.ConsumedCapacity //may be single record or array (if batch request)
 // if single
 const rru = costs.CapacityUnits

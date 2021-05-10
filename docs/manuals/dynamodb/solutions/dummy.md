@@ -16,7 +16,7 @@ npm run generator -- src/<your folder>/<generator>.ts
 
 ### Common pattern (JS)
 
-```jsx
+```javascript
 
 const generate = () => {
 	const results = [];
@@ -46,7 +46,7 @@ TARGET_TABLE: lsc-dev-sometable
 
 And read it in the top of generator script
 
-```jsx
+```javascript
 const yaml = require('yaml');
 const fs = require('fs');
 const AWS = require('aws-sdk');
@@ -65,7 +65,7 @@ const credentials = {
 Before you start uploading you dummy data into the database, check your generated results with your eyes (and text editor)
 To do this, generate small amount of results and write them into the file instead of the DB
 
-```jsx
+```javascript
 const fs = require('fs');
 
 // ....

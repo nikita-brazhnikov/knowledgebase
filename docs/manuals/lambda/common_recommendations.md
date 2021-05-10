@@ -40,7 +40,7 @@ Use credentials helper (download here)
 
 Always specify credentials when creating new clients for the AWS resources.
 
-```jsx
+```javascript
 // bad
 const lambdaClient = new AWS.Lambda(); 
 
